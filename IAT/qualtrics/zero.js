@@ -3,24 +3,12 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtr
   
   //Randomly choose the attribute words from a larger list of attribute words.
   //Internal studies in Project Implicit found no difference in performance between the words.
-  var posWords = API.shuffle([
-            'Love', 'Cheer', 'Friend', 'Pleasure', 
-            'Adore', 'Cheerful', 'Friendship', 'Joyful', 
-            'Smiling','Cherish', 'Excellent', 'Glad', 
-            'Joyous', 'Spectacular', 'Appealing', 'Delight', 
-            'Excitement', 'Laughing', 'Attractive','Delightful', 
-            'Fabulous', 'Glorious', 'Pleasing', 'Beautiful', 
-            'Fantastic', 'Happy', 'Lovely', 'Terrific', 
-            'Celebrate', 'Enjoy', 'Magnificent', 'Triumph']);
-  var negWords = API.shuffle([
-            'Abuse', 'Grief', 'Poison', 'Sadness', 
-            'Pain', 'Despise', 'Failure', 'Nasty', 
-            'Angry', 'Detest', 'Horrible', 'Negative', 
-            'Ugly', 'Dirty', 'Gross', 'Evil', 
-            'Rotten','Annoy', 'Disaster', 'Horrific',  
-            'Scorn', 'Awful', 'Disgust', 'Hate', 
-            'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
-            'Hatred', 'Hurtful', 'Sickening', 'Yucky']);
+  var detailWords = API.shuffle([
+            'specific', 'detail', 'clear', 'true', 
+            'factual', 'appropriate', 'proper', 'cignition']);
+  var generalWords = API.shuffle([
+            'vague', 'abguious', 'general', 'false', 
+            'dream', 'unappropriate', 'false', 'affect']);
   
     return iatExtension({
         category1 : {
